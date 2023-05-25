@@ -1,36 +1,36 @@
 {UTF-8}
 birthrate=
-	1
+	1.4
 	~	
 	~		|
 
 births=
-	("Population 15-44"/20)*birthrate
+	("Population 15-44"/30/2)*birthrate
 	~	
 	~		|
 
 "deaths 0 - 14"=
-	Population 0 to 14*"mortality 0 - 14"
+	Population 0 to 14*"mortality 0 - 14"/15
 	~	
 	~		|
 
 "deaths 15 - 44"=
-	"Population 15-44"*"mortality 15 - 44"
+	"Population 15-44"*"mortality 15 - 44"/30
 	~	
 	~		|
 
 "deaths 45 - 64"=
-	Population 45 to 64*"mortality 45 - 64"
+	Population 45 to 64*"mortality 45 - 64"/20
 	~	
 	~		|
 
 "deaths 65 - 90"=
-	Population 65 to 90*"mortality 65 - 90"
+	Population 65 to 90*"mortality 65 - 90"/25
 	~	
 	~		|
 
 "deaths 90 - 110"=
-	"Population 90-110"*"mortality 90 - 110"
+	"Population 90-110"*"mortality 90 - 110"/20
 	~	
 	~		|
 
@@ -272,7 +272,6 @@ V300  Do not put anything below this section - it will be ignored
 $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
 ///---\\\
 :GRAPH GRAPH
-:TITLE  
 :X-DIV 1
 :X-MIN 2004
 :X-MAX 2060
@@ -284,7 +283,6 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,1
 :VAR maturation 14 to 15
 :L<%^E!@
 1:Current.vdf
-1:C:\Program Files (x86)\Vensim\Current.vdf
 9:Current
 22:$,Dollar,Dollars,$s
 22:Hour,Hours
@@ -300,7 +298,7 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,1
 27:2,
 34:0,
 4:Time
-5:"mortality 0 - 14"
+5:population
 35:Date
 36:YYYY-MM-DD
 37:2000
@@ -309,6 +307,6 @@ $192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,1
 40:0
 41:0
 42:1
-24:0
+24:2004
 25:2060
 26:2060
